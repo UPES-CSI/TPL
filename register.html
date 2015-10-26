@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Register For TPL</title>
+</head>
+<body>
+<form class="form" method="POST" action="regcheck.php" role="form">
+	<div class="form-group">
+<input type="text" placeholder="Your Name" name="name" required>
+</div>
+<div class="form-group">
+<input type="email" placeholder="Your email address" name="email" autocomplete="off" id="email" required validate>
+<span class="error" id="emailError"></span>
+</div>
+<div class="form-group">
+<input type="text" placeholder="Your contact number" name="phone" required validate>
+</div>
+<div class="form-group">
+<input type="password" placeholder="Password" name="password" id="password" required validate>
+</div>
+<div class="form-group">
+	<label>Branch:</label>
+<select style="color:black;" name="branch" required>
+	<option value="">-- Select --</option>
+	<option value="Cloud Computing">Cloud Computing</option>
+	<option value="Open Source">Open Source</option>
+	<option value="Mainframe Technology">Mainframe Technology</option>
+	<option value="Oil &amp; Gas">Oil &amp; Gas Informatics</option>
+	<option value="Business Analytics">Business Analytics</option>
+	<option value="Telecom Informatics">Telecom Informatics</option>
+	<option value="Retail Automation">Retail Automation</option>
+	<option value="IT Infrastructure">IT Infrastructure</option>
+	<option value="Cyber Security &amp; Forensics">Cyber Security</option>
+	<option value="Cyber Law">Cyber Law</option>
+	<option value="Others">Others</option>
+</select>
+</div>
+<div class="form-group">
+	<label>Year of study:</label>
+	<select style="color:black;" name="year" required> 
+	<option value="">-- Select --</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+</select>
+	</div>
+<div class="form-group">
+	<label>Categories chosen:</label>
+	<br>
+<input type="checkbox" name="coding" value="1">Coding<br>
+<input type="checkbox" name="design" value="1">Designing<br>
+<input type="checkbox" name="debate" value="1">Debate<br>
+<input type="checkbox" name="photo"  value="1">Photography<br>
+</div>
+
+<button class="btn btn-success" type="submit" name="register" id="register">Register</button>
+
+</form>
+</body>
+</html>
